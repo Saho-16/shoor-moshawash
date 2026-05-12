@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شعور مشوش - المجلة العالمية</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Supabase JS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<div class="rain-bg"></div>
+<div class="content">
+    <header>
+        <div class="logo">📖 شعور مشوش</div>
+        <nav>
+            <ul>
+                <li><a href="#" data-page="home">الرئيسية</a></li>
+                <li><a href="#" data-page="tragedy">مأساة</a></li>
+                <li><a href="#" data-page="sadness">حزن</a></li>
+                <li><a href="#" data-page="about">حول</a></li>
+                <li><a href="#" data-page="chief">رئيس التحرير</a></li>
+            </ul>
+        </nav>
+        <div id="auth-buttons">
+            <a href="login.html" style="color:#c084fc; margin-left:10px;">دخول</a>
+            <a href="login.html" style="color:#c084fc;">تسجيل</a>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>شعور مشوش</h1>
+        <p>مجلة تعبر عن أعماق الحزن والمطر</p>
+    </div>
+
+    <div class="sections">
+        <div class="section-btn active" data-cat="home">الرئيسية</div>
+        <div class="section-btn" data-cat="tragedy">مأساة</div>
+        <div class="section-btn" data-cat="sadness">حزن</div>
+    </div>
+
+    <div id="cardsContainer" class="cards">
+        <!-- سيتم تعبئتها ديناميكياً -->
+    </div>
+
+    <footer>
+        <p>© 2025 مجلة شعور مشوش - تعمل على Supabase</p>
+    </footer>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
