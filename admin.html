@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>لوحة التحكم - شعور مشوش</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <style>
+        .admin-container { max-width: 1000px; margin: 30px auto; padding: 20px; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-weight: bold; }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            background: #2d2a3a;
+            color: white;
+        }
+        button { background: #c084fc; padding: 8px 20px; border-radius: 40px; border: none; cursor: pointer; }
+        .article-item { background: rgba(255,255,255,0.1); margin: 15px 0; padding: 15px; border-radius: 20px; }
+    </style>
+</head>
+<body>
+<div class="rain-bg"></div>
+<div class="admin-container">
+    <h1>لوحة تحكم رئيس التحرير</h1>
+    <div id="user-info"></div>
+    <hr>
+    <h2>إضافة مقال جديد</h2>
+    <div class="form-group">
+        <label>العنوان</label>
+        <input type="text" id="title">
+    </div>
+    <div class="form-group">
+        <label>القسم</label>
+        <select id="category">
+            <option value="home">الرئيسية</option>
+            <option value="tragedy">مأساة</option>
+            <option value="sadness">حزن</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>ملخص قصير</label>
+        <input type="text" id="excerpt">
+    </div>
+    <div class="form-group">
+        <label>المحتوى الكامل</label>
+        <textarea id="content" rows="5"></textarea>
+    </div>
+    <div class="form-group">
+        <label>صورة المقال</label>
+        <input type="file" id="imageFile" accept="image/*">
+    </div>
+    <button id="publishBtn">نشر المقال</button>
+    
+    <h2 style="margin-top: 40px;">إدارة المقالات الحالية</h2>
+    <div id="articlesList"></div>
+</div>
+<script src="js/main.js"></script>
+<script>
+    // سيتم تحميل المقالات من main.js وعرضها هنا مع أزرار تعديل/حذف
+    // لأن الكود طويل، سأكتب الدوال الأساسية في main.js الموحّد
+</script>
+</body>
+</html>
